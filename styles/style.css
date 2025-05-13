@@ -1,0 +1,847 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: #fff;
+    color: #222;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+/* ----- Header ----- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 2em 10em;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5em;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #4caf50;
+}
+
+main {
+    background: #fff;
+}
+
+
+/* ----- Home ----- */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-image: url('../static/indigo_fashion_shop2.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: darken;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2em 3em;
+    border-radius: 10px;
+    max-width: 700px; 
+    color: #ffffff;
+}
+
+
+.hero-container h1, .hero-container h2, .hero-container p {
+    text-shadow: 1px 1px 3px rgba(47, 47, 47, 0.5);
+}
+
+.hero-container h1, .hero-container h2 {
+    margin: 0.5em;
+    color: #fff;
+}
+
+.hero-container h1 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 4.5em;
+    margin-bottom: 0;
+}
+
+.hero-container h2 {
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+.hero-container hr {
+    width: 450px;
+    height: 3px;
+    background-color: #fefefe;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+
+.hero-container p {
+    font-size: 1.3em;
+    margin: 1em 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(47, 47, 47, 0.5);
+}
+
+.greeting {
+    background-color: #f3f3f3;
+    font-size: 1.5em;
+    color: #3e3e3e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.greeting * {
+    max-width: 800px;
+    text-align: center;
+}
+
+.greeting h2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 0;
+    color: #3E3E3F;
+}
+
+.greeting p {
+    margin-top: 0;
+}
+
+.greeting p:first-of-type {
+    margin-top: 1em;  
+}
+
+.categories {
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 2em 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+}
+
+.card {
+    width: 340px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    overflow: hidden;
+    margin: 0; /* Remove auto margin to avoid extra spacing */
+    transition: box-shadow 0.3s;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+  
+.card-image img {
+    width: 100%;
+    display: block;
+    background: #ccc;
+    height: 300px;
+    object-fit: cover;
+}
+  
+.card-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0 0 6px 0;
+    text-align: center;
+    padding: 1em;
+}
+
+.promotions { 
+    width: 100%;
+    background-color: #f3f3f3;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.promotions ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 2em;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.promotions ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promo-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.promo-content {
+    flex: 1;
+    color: #fff;
+    background-color: #2a3137;
+    padding: 2em;
+    position: relative;
+}
+
+.promo-content p {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 600;
+}
+
+.promo-content .percent {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #2a3137;
+    padding: 1em;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex; /* За центриране на текста вътре */
+    flex-direction: column;
+    align-items: center; /* Вертикално центриране на текста */
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.promo-content .percent p {
+    line-height: 1em;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.promo-content h2 {
+    font-size: 3em;
+    margin: 1em 0 0.5em 0;
+    max-width: 400px;
+}
+
+.promo-content h3 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.promo-card img {
+    max-width: 320px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.promo-content a, .event-content a {
+    text-decoration: none;
+    background: #586672;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.promo-content a:hover, .event-content a:hover {
+    background: #1C7C01;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(28,124,1,0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+.events { 
+    width: 100%;
+    background-color: #fff;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.events .title {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #3E3E3F;
+}
+
+.events ul {
+    display: flex;
+    flex-wrap: wrap; /* Позволява пренасяне на редове */
+    justify-content: center; /* Центрира последната карта, ако е нечетна */
+    gap: 2em; /* Разстояние между картите */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.events ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Подрежда съдържанието вертикално */
+    width: calc(50% - 24px); /* Две карти на ред с разстояние между тях */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.event-content {
+    flex: 1;
+    color: #fff;
+    background-color: #2a3137;
+    padding: 2em;
+    position: relative;
+    min-height: 250px;;
+}
+
+.event-content p {
+    font-size: 1.5em;
+    margin: 1em 2em;
+    font-weight: 400;
+}
+
+.event-content h2 {
+    font-size: 2.5em;
+    max-width: 500px;
+    text-shadow: 1px 1px 3px rgba(47, 47, 47, 0.5); 
+}
+
+.event-card img {
+    width: 100%; /* Снимката заема цялата ширина на картата */
+    aspect-ratio: 3 / 2; /* Задава съотношение 4:5 */
+    object-fit: cover; /* Запазва пропорциите на изображението */
+    border-radius: 10px 10px 0 0; /* Закръглени ъгли само отгоре */
+}
+
+.event-content a {
+    text-decoration: none;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: #586672;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.event-content a:hover {
+    background: #1C7C01;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(28,124,1,0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-footer p {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.promo-content a, .event-content a {
+    text-decoration: none;
+    background: #586672;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.promo-content a:hover, .event-content a:hover {
+    background: #1C7C01;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(28,124,1,0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* ----- About ----- */
+
+.photo-container {
+    background: #ffffff;
+    background-image: url('../static/aviv-rachmadian-7F7kEHj72MQ-unsplash-scaled-2560x1280.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: darken;
+    height: 600px;
+    background-position: center;
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    position: relative;
+}
+
+.photo-container img {
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    left: 250px;
+    bottom: 0;
+}
+
+.photo-container h1 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: right;
+    max-width: 800px;
+    right: 300px;
+}
+
+.photo-container .title {
+    top: 150px;	
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+.values h1 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #3E3E3F;
+}
+
+.values .baloons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.5em;
+}
+
+.baloon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 2em;
+}
+
+
+.baloon img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+}
+
+.baloon p {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #3E3E3F;
+    text-align: center;
+    width: 400px;
+}
+
+.interesting {
+    display: flex;
+    flex-direction: column;
+}
+
+.interesting .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 5em;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.interesting .row:nth-of-type(2) {
+    flex-direction: row-reverse;   
+    justify-content: start;
+    margin-right: 0;
+    margin-left: -100px;
+    background-color: #f3f3f3;
+    gap: 10em;
+}
+
+.interesting .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    max-width: 800px;
+}
+
+.interesting .text h2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.interesting .text p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.interesting img {
+    width: 750px; /* Фиксирана ширина */
+    height: 750px; /* Фиксирана височина */
+    aspect-ratio: 1 / 1; /* Съотношение 1:1 */
+    object-fit:cover; /* Запазва пропорциите на изображението */
+    display: block;
+    border-radius: 50%; /* Прави изображението кръгло */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Добавя сянка за ефект */
+    overflow: hidden; /* Уверява се, че съдържанието не излиза извън кръга */
+    margin-right: -100px; /* Премества изображението наляво */
+}
+
+/* ----- Footer -----  */
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #232325;
+    color: #fff;
+    padding: 4em 3em 3em 3em;
+    text-align: center;
+}
+
+.footer-content .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0 2em;
+}
+
+.footer-content .left p {
+    margin: 0.3em 0;
+    color: #fff;
+}
+
+.footer-logo {
+    border: 2px solid #fff; /* Цвят и дебелина на рамката */
+    border-radius: 50px; /* Заобляне на лявата и дясната страна */
+    overflow: hidden;
+    width: 250px; /* Ширина на логото */
+    height: 40px; /* Височина на логото */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 0.8em 1em 0.5em 0.5em; /* Фон за контраст */
+    margin-left: 1em;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-logo img {
+    width: 100%; /* Размер на изображението вътре */
+    height: 100%;
+}
+
+.footer-logo:hover {
+    transform: scale(1.1);
+}
+  
+.footer-social .social-icon {
+    display: inline-block;
+    margin: 1em 0.3em;
+    padding: 0.1em;
+    width: 1.5em;
+    height: 1.5em;
+    background: #fff;
+    color: #222;
+    border-radius: 50%;
+    line-height: 1.5em;
+    font-size: 2em;
+    transition: background 0.1s, color 0.3s;
+    text-align: center;
+    vertical-align: middle;
+}
+  
+.footer-social .social-icon:hover {
+    background: #9fafbc;
+    color: #000;    
+    transform: scale(1.1);
+}
+  
+.footer-menu a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+  
+.footer-menu a:hover {
+    color: #1C7C01;
+}
+  
+.footer-copyright {
+    font-size: 1em;
+    background-color: #1c1c1c;
+    color: #d6d5d5;
+}
+
+.footer-copyright p {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+  
+.footer-copyright span {
+    color: #1C7C01;
+    font-weight: bold;
+    margin-left: 5px;
+}
+  
+
+
+
+
+
+button {
+    background: #727272;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background: #1C7C01;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(28,124,1,0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+th, td {
+    border: 1px solid #b2dfb2;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: #e9ffe0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #b2dfb2;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.gallery img {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(34,139,34,0.10);
+}
+
+@media (max-width: 700px) {
+    header, footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+    main {
+        padding: 0 4vw;
+    }
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 24px;
+}
+.product-card {
+    background: #fff;
+    border: 1px solid #b2dfb2;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(34,139,34,0.07);
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.product-card:hover {
+    box-shadow: 0 4px 16px rgba(34,139,34,0.15);
+}
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.product-card .prod-title {
+    font-weight: bold;
+    color: #228b22;
+    margin: 12px 0 4px 0;
+}
+.product-card .prod-desc {
+    font-size: 0.95em;
+    color: #444;
+    margin-bottom: 12px;
+}
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+}
+.product-details img {
+    width: 320px;
+    border-radius: 8px;
+}
