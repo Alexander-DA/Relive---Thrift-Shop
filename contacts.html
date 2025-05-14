@@ -6,7 +6,7 @@
         <meta name="author" content="Relive Team" />
         <meta name="keywords" content="Relive, дрехи втора употреба, устойчиво потребление, екология, мода" />
         <meta name="robots" content="index, follow" />
-        <link rel="icon" href="./static/logo_crop.jpg" type="image/png" />
+        <link rel="icon" href="./static/Logos/icon_logo.png" type="image/png" />
         <title>Relive</title>
         <meta name="description" content="Relive – магазин за дрехи втора употреба, насочен към екология и устойчиво потребление." />
         <link rel="stylesheet" href="./styles/style.css" />
@@ -16,29 +16,51 @@
         <header>
             <div class="logo">
                 <a href="home.html">
-                    <img src="./static/95a70b05-6e50-4205-b3d7-2bb10431d252.jpg" alt="Relive - Лого"/>
+                    <img src="./static/Logos/long_logo.jpg" alt="Relive - Лого"/>
                 </a>
             </div>
             <nav>
                 <ul>
+                    <li><a href="home.html">Начало</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="about.html">За нас</a></li>
-                    <li><a href="contacts.html">Контакти</a></li>
                     <li><a href="login.html">Вход</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-
-
-            
+        <main class="contacts">
+            <h1>Свържи се с нас</h1>
+            <section class="contact-card">
+                <div class="contacts-upper">
+                    <img src="./static/Contacts/Olga1.jpeg" alt="Olga Klisurova" />
+                    <div class="contact-content">
+                        <h2>Олга Клисурова</h2>
+                        <p><i class="fas fa-phone"></i> +359 89 844 0998</p>
+                        <p><i class="fas fa-envelope"></i> olga.klisurova@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i>  Стара Загора, ул. "Св. Княз Борис" 171</p>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.9723405280856!2d25.641097476913533!3d42.42832363078496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a8697055d19d91%3A0xa34a956e609fc1ca!2z0KDQtdCb0LjQsiAwMSDQldCe0J7QlA!5e0!3m2!1sbg!2sbg!4v1747225153185!5m2!1sbg!2sbg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <section class="contact-form">
+                <form action="https://formspree.io/f/mwpoaprn" method="POST" target="_self">
+                    <label for="name">Име</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required />
+                    <label for="email">Имейл</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
+                    <label for="message">Съобщение</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Пиша Ви във връзка с..." required></textarea>
+                    <button type="submit">Изпрати</button>
+                </form>
         </main>
         <footer>
             <div class="footer-content">
                 <div class="left">
                     <div class="footer-logo">
                         <a href="home.html">
-                            <img src="./static/95a70b05-6e50-4205-b3d7-2bb10431d252.jpg" alt="Relive - Лого"/>
+                            <img src="./static/Logos/long_logo.jpg" alt="Relive - Лого"/>
                         </a>
                     </div>
                 </div>

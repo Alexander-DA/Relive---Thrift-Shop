@@ -46,7 +46,7 @@ nav a {
     text-decoration: none;
     color: #222;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.3em;
     transition: color 0.2s;
 }
 
@@ -68,7 +68,7 @@ main {
     align-items: center;
     justify-content: center;
     color: #fff;
-    background-image: url('../static/indigo_fashion_shop2.jpg');
+    background-image: url('../static/Home/shop.jpg');
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -206,6 +206,7 @@ main {
     margin: 0 0 6px 0;
     text-align: center;
     padding: 1em;
+    color: #3E3E3F;
 }
 
 .promotions { 
@@ -245,6 +246,9 @@ main {
 }
 
 .promo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex: 1;
     color: #fff;
     background-color: #2a3137;
@@ -301,25 +305,6 @@ main {
     object-fit: cover;
 }
 
-.promo-content a, .event-content a {
-    text-decoration: none;
-    background: #586672;
-    color: #fff;
-    border: none;
-    padding: 1em 2em;
-    border-radius: 6px;
-    font-size: 1em;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.promo-content a:hover, .event-content a:hover {
-    background: #1C7C01;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(28,124,1,0.4);
-    transition: all 0.3s ease-in-out;
-}
-
 .events { 
     width: 100%;
     background-color: #fff;
@@ -360,9 +345,13 @@ main {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    height: 100%;
 }
 
 .event-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex: 1;
     color: #fff;
     background-color: #2a3137;
@@ -390,42 +379,24 @@ main {
     border-radius: 10px 10px 0 0; /* Закръглени ъгли само отгоре */
 }
 
-.event-content a {
-    text-decoration: none;
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    background: #586672;
-    color: #fff;
-    border: none;
-    padding: 1em 2em;
-    border-radius: 6px;
-    font-size: 1em;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.event-content a:hover {
-    background: #1C7C01;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(28,124,1,0.4);
-    transition: all 0.3s ease-in-out;
-}
-
-
 .card-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 .card-footer p {
     font-size: 1.5em;
     font-weight: 400;
+    margin: 0;
+    margin-left: 0.5em;
 }
 
 .promo-content a, .event-content a {
     text-decoration: none;
+    right: 0;
     background: #586672;
     color: #fff;
     border: none;
@@ -448,7 +419,7 @@ main {
 
 .photo-container {
     background: #ffffff;
-    background-image: url('../static/aviv-rachmadian-7F7kEHj72MQ-unsplash-scaled-2560x1280.jpg');
+    background-image: url('../static/About/hanging_clothes.jpg');
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -471,9 +442,8 @@ main {
     width: auto;
     height: 500px;
     object-fit: cover;
-    border-radius: 10px;
     position: absolute;
-    left: 250px;
+    left: 350px;
     bottom: 0;
 }
 
@@ -486,7 +456,7 @@ main {
     font-weight: bold;
     text-align: right;
     max-width: 800px;
-    right: 300px;
+    right: 400px;
 }
 
 .photo-container .title {
@@ -550,6 +520,42 @@ main {
     width: 400px;
 }
 
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+.partners h1 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #3E3E3F;
+}
+
+.partner-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3em;
+}
+
+.partners-logos a {
+    text-decoration: none;
+    align-items: center;
+}
+
+.partners-logos img {
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+}
+
 .interesting {
     display: flex;
     flex-direction: column;
@@ -563,6 +569,7 @@ main {
     gap: 5em;
     max-height: 500px;
     overflow: hidden;
+    background-color: #f3f3f3;
 }
 
 .interesting .row:nth-of-type(2) {
@@ -570,7 +577,7 @@ main {
     justify-content: start;
     margin-right: 0;
     margin-left: -100px;
-    background-color: #f3f3f3;
+    background-color: #fff;
     gap: 10em;
 }
 
@@ -587,11 +594,13 @@ main {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 2em;
     font-weight: bold;
+    color: #3E3E3F;
 }
 
 .interesting .text p {
     font-size: 1.2em;
     text-align: center;
+    color: #3E3E3F;
 }
 
 .interesting img {
@@ -604,6 +613,153 @@ main {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Добавя сянка за ефект */
     overflow: hidden; /* Уверява се, че съдържанието не излиза извън кръга */
     margin-right: -100px; /* Премества изображението наляво */
+}
+
+/* ----- Contacts ----- */
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+}
+
+.contacts h1 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.5em;
+    color: #3E3E3F;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 60%;
+    margin-bottom: 4em;
+}
+
+.contacts-upper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4em;
+    background-color: #fff;
+}
+
+.contact-content {
+    color: #3E3E3F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-content h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.contact-content p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.contact-card img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.5em solid #fff; /* Цвят и дебелина на рамката */
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+}
+
+.map {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 4em;
+    width: 40%;
+}
+
+.contact-form form {
+    width: 90%;
+}
+
+.contact-form form input, .contact-form form textarea {
+    padding: 0.7em;
+    border-radius: 6px;
+    border: 1px solid #c4c4c4;
+    font-size: 1em;
+    margin-bottom: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: #3E3E3F;
+    background-color: #fbfbfb;
+    transition: border 0.3s;
+    letter-spacing: 0.03em;
+}
+
+.contact-form form input:focus, .contact-form form textarea:focus {
+    border: 1px solid #1C7C01;
+    outline: none;
+}
+
+.contact-form form input:focus::placeholder,
+.contact-form form textarea:focus::placeholder {
+    color: transparent;
+    transition: color 0.3s ease;
+}
+
+.contact-form label {
+    font-size: 1.2em;
+    color: #3E3E3F;
+    margin-left: 0.5em;
+}
+
+.contact-form h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.5em;
+    color: #3E3E3F;
+}
+
+button {
+    background: #586672;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+button:hover {
+    background: #1C7C01;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(28,124,1,0.4);
+    transition: all 0.3s ease-in-out;
 }
 
 /* ----- Footer -----  */
@@ -713,24 +869,7 @@ main {
 
 
 
-button {
-    background: #727272;
-    color: #fff;
-    border: none;
-    padding: 1em 2em;
-    border-radius: 6px;
-    font-size: 1em;
-    font-weight: 600;
-    cursor: pointer;
-    
-}
 
-button:hover {
-    background: #1C7C01;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(28,124,1,0.4);
-    transition: all 0.3s ease-in-out;
-}
 
 table {
     width: 100%;
