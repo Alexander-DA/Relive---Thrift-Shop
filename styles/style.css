@@ -266,7 +266,7 @@ main {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #fff;
+    background-color: #86FF64;
     color: #2a3137;
     padding: 1em;
     width: 120px;
@@ -391,7 +391,6 @@ main {
     font-size: 1.5em;
     font-weight: 400;
     margin: 0;
-    margin-left: 0.5em;
 }
 
 .promo-content a, .event-content a {
@@ -639,7 +638,7 @@ main {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    width: 60%;
+    width: 70%;
     margin-bottom: 4em;
 }
 
@@ -667,7 +666,20 @@ main {
 
 .contact-content p {
     font-size: 1.5em;
-    margin: 0;
+    margin-bottom: 0.05em;
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.contact-content p:nth-of-type(3) {
+    margin-left: 1.2em;
+    gap: 1.1em;
+}
+
+.contact-content i:nth-of-type(3) {
+    margin-right: 1em;
 }
 
 .contact-card img {
