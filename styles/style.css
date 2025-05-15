@@ -51,7 +51,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #4caf50;
+    color: #46A72A;
 }
 
 main {
@@ -184,7 +184,7 @@ main {
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     overflow: hidden;
-    margin: 0; /* Remove auto margin to avoid extra spacing */
+    margin: 0;
     transition: box-shadow 0.3s;
 }
   
@@ -272,9 +272,9 @@ main {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    display: flex; /* За центриране на текста вътре */
+    display: flex;
     flex-direction: column;
-    align-items: center; /* Вертикално центриране на текста */
+    align-items: center;
     justify-content: center;
     font-size: 2em;
     font-weight: bold;
@@ -322,9 +322,9 @@ main {
 
 .events ul {
     display: flex;
-    flex-wrap: wrap; /* Позволява пренасяне на редове */
-    justify-content: center; /* Центрира последната карта, ако е нечетна */
-    gap: 2em; /* Разстояние между картите */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
@@ -333,8 +333,8 @@ main {
 .events ul li {
     list-style: none;
     display: flex;
-    flex-direction: column; /* Подрежда съдържанието вертикално */
-    width: calc(50% - 24px); /* Две карти на ред с разстояние между тях */
+    flex-direction: column;
+    width: calc(50% - 24px);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -373,10 +373,10 @@ main {
 }
 
 .event-card img {
-    width: 100%; /* Снимката заема цялата ширина на картата */
-    aspect-ratio: 3 / 2; /* Задава съотношение 4:5 */
-    object-fit: cover; /* Запазва пропорциите на изображението */
-    border-radius: 10px 10px 0 0; /* Закръглени ъгли само отгоре */
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 .card-footer {
@@ -413,6 +413,104 @@ main {
     transition: all 0.3s ease-in-out;
 }
 
+/* ----- Catalog ----- */
+main.catalog {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalog h1 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.5em;
+    color: #3E3E3F;
+}
+
+.product-categories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+.product-categories a {
+    width: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.8em 1.7em;
+    text-decoration: none;
+    font-weight: bold;
+    color: #3E3E3F;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.product-categories a:hover {
+    background-color: #5ed53d;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(28,124,1,0.4);
+}
+
+.catalog-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 2em;
+    max-width: 1200px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.item img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    top: 0;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+
+.item h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: #3E3E3F;
+}
+
+.item p {
+    font-size: 0.8em;
+    text-align: center;
+    color: #3E3E3F;
+}
+
 
 /* ----- About ----- */
 
@@ -439,7 +537,7 @@ main {
 
 .photo-container img {
     width: auto;
-    height: 500px;
+    height: 550px;
     object-fit: cover;
     position: absolute;
     left: 350px;
@@ -503,9 +601,10 @@ main {
 
 
 .baloon img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
+    padding: 3em;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
@@ -603,18 +702,19 @@ main {
 }
 
 .interesting img {
-    width: 750px; /* Фиксирана ширина */
-    height: 750px; /* Фиксирана височина */
-    aspect-ratio: 1 / 1; /* Съотношение 1:1 */
-    object-fit:cover; /* Запазва пропорциите на изображението */
+    width: 750px;
+    height: 750px;
+    aspect-ratio: 1 / 1;
+    object-fit:cover;
     display: block;
-    border-radius: 50%; /* Прави изображението кръгло */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Добавя сянка за ефект */
-    overflow: hidden; /* Уверява се, че съдържанието не излиза извън кръга */
-    margin-right: -100px; /* Премества изображението наляво */
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-right: -100px;
 }
 
 /* ----- Contacts ----- */
+
 .contacts {
     display: flex;
     flex-direction: column;
@@ -687,7 +787,7 @@ main {
     height: 400px;
     object-fit: cover;
     border-radius: 50%;
-    border: 0.5em solid #fff; /* Цвят и дебелина на рамката */
+    border: 0.5em solid #fff;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
 }
 
@@ -713,6 +813,10 @@ main {
 
 .contact-form form {
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
 }
 
 .contact-form form input, .contact-form form textarea {
@@ -800,22 +904,22 @@ button:hover {
 }
 
 .footer-logo {
-    border: 2px solid #fff; /* Цвят и дебелина на рамката */
-    border-radius: 50px; /* Заобляне на лявата и дясната страна */
+    border: 2px solid #fff;
+    border-radius: 50px;
     overflow: hidden;
-    width: 250px; /* Ширина на логото */
-    height: 40px; /* Височина на логото */
+    width: 250px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #fff;
-    padding: 0.8em 1em 0.5em 0.5em; /* Фон за контраст */
+    padding: 0.8em 1em 0.5em 0.5em;
     margin-left: 1em;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer-logo img {
-    width: 100%; /* Размер на изображението вътре */
+    width: 100%;
     height: 100%;
 }
 
@@ -899,19 +1003,7 @@ th {
     background: #e9ffe0;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 16px;
-}
 
-input, textarea {
-    padding: 8px;
-    border: 1px solid #b2dfb2;
-    border-radius: 4px;
-    font-size: 1em;
-}
 
 
 .gallery {
