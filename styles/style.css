@@ -6,6 +6,7 @@ body {
     background-color: #fff;
     color: #222;
     margin: 0;
+    padding: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -524,6 +525,35 @@ main.catalog {
     color: #565657;
 }
 
+.size-table {
+    margin: 2em auto;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    overflow: hidden; 
+}
+.size-table h2 {
+    text-align: center;
+    margin: 1em;
+    font-size: 1.5em;
+    color: #3E3E3F;
+    letter-spacing: 0.05em;
+}
+.size-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.size-table th, .size-table td {
+    border: 1px solid #e0e0e0;
+    padding: 0.7em 1em;
+    text-align: center;
+}
+.size-table th {
+    background: #f3f3f3;
+    font-weight: 600;
+}
+
 
 /* ----- About ----- */
 
@@ -996,108 +1026,3 @@ button:hover {
 
 
 
-
-
-
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 16px;
-}
-
-th, td {
-    border: 1px solid #b2dfb2;
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background: #e9ffe0;
-}
-
-
-
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 16px;
-}
-
-.gallery img {
-    width: 220px;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(34,139,34,0.10);
-}
-
-@media (max-width: 700px) {
-    header, footer {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 16px;
-    }
-    main {
-        padding: 0 4vw;
-    }
-    .gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
-
-
-
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin-top: 24px;
-}
-.product-card {
-    background: #fff;
-    border: 1px solid #b2dfb2;
-    border-radius: 8px;
-    width: 220px;
-    box-shadow: 0 2px 8px rgba(34,139,34,0.07);
-    cursor: pointer;
-    transition: box-shadow 0.2s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.product-card:hover {
-    box-shadow: 0 4px 16px rgba(34,139,34,0.15);
-}
-.product-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-}
-.product-card .prod-title {
-    font-weight: bold;
-    color: #228b22;
-    margin: 12px 0 4px 0;
-}
-.product-card .prod-desc {
-    font-size: 0.95em;
-    color: #444;
-    margin-bottom: 12px;
-}
-.product-details {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 12px;
-}
-.product-details img {
-    width: 320px;
-    border-radius: 8px;
-}
