@@ -900,6 +900,10 @@ main.catalog {
     color: #3E3E3F;
 }
 
+textarea {
+    resize: none;
+}
+
 button {
     background: #586672;
     color: #fff;
