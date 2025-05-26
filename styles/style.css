@@ -1104,6 +1104,7 @@ button:hover {
         height: auto !important;
     }
 
+    
     .categories ul li {
         width: 100%;
         max-width: 250px;
@@ -1285,8 +1286,7 @@ button:hover {
     }
 
     .greeting {
-        padding: 0 1em;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     .values {
