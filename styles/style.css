@@ -20,6 +20,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+html, body {
+    overflow-x: hidden;
+}
 
 /* ----- Header ----- */
 
@@ -440,6 +443,7 @@ main.catalog {
 .product-categories {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1.5em;
@@ -1027,6 +1031,432 @@ button:hover {
     margin-left: 5px;
 }
   
+/* --- Responsive Hamburger Menu --- */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #3E3E3F;
+    z-index: 1001;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    .header-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    header {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        padding: 1em 2em !important;
+    }
+
+    button.hamburger {
+        display: flex;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 2em;
+        color: #3E3E3F;
+        box-shadow: none;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        z-index: 1000;
+        gap: 2em;
+        padding: 2em 0;
+        align-items: center;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    nav ul li a {
+        color: #3E3E3F;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    .logo img {
+        max-width: 300px !important;
+        height: auto !important;
+    }
+
+    .categories ul li {
+        width: 100%;
+        max-width: 250px;
+        height: 100%;
+        max-height: 350px;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 250px;
+        height: 100%;
+        max-height: 350px;
+    }
+
+    .card img {
+        height: 250px;
+        object-fit: cover;
+    }
+    .card-title {
+        font-size: 1.2em;
+    }
+
+    .promotions ul {
+        gap: 1em;
+        padding: 0.5em 0;
+    }
+    .promotions ul li {
+        flex-direction: column;
+        width: 100%;
+        min-width: unset;
+        max-width: 98vw;
+    }
+    .promo-card {
+        width: 100%;
+        max-width: 98vw;
+    }
+    .promo-card img {
+        max-width: 100%;
+        max-height: 180px;
+        height: auto;
+        object-fit: cover;
+    }
+    .promo-content {
+        padding: 1em;
+    }
+    .promo-content h2 {
+        font-size: 1.5em;
+        max-width: 100%;
+    }
+    .promo-content h3 {
+        font-size: 1em;
+    }
+    .promo-content p {
+        font-size: 1em;
+    }
+    .promo-content .percent {
+        width: 70px;
+        height: 70px;
+        font-size: 1em;
+        top: 10px;
+        right: 10px;
+        padding: 0.5em;
+    }
+    .promo-content .percent p {
+        font-size: 1em;
+    }
+    .promo-content a {
+        font-size: 0.95em;
+        padding: 0.7em 1.2em;
+    }
+    
+    .events ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        padding: 0.5em 0;
+    }
+    .events ul li {
+        width: 100%;
+        min-width: unset;
+        max-width: 98vw;
+    }
+    .event-card {
+        width: 100%;
+        max-width: 98vw;
+    }
+    .event-card img {
+        max-width: 100%;
+        max-height: 180px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    .event-content {
+        padding: 1em;
+        min-height: unset;
+    }
+    .event-content h2 {
+        font-size: 1.3em;
+        max-width: 100%;
+    }
+    .event-content p {
+        font-size: 1em;
+        margin: 1em 0.5em;
+    }
+    .card-footer p {
+        font-size: 1em;
+    }
+    .event-content a {
+        font-size: 0.95em;
+        padding: 0.7em 1.2em;
+    }
 
 
 
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        padding: 0;
+        padding-top: 1em;
+        text-align: center;
+    }
+    .footer-content .left,
+    .footer-content .center,
+    .footer-content .right {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .footer-content .center p:nth-of-type(3) {
+        margin-bottom: 0.3em;
+    }
+    .footer-logo {
+        width: 160px;
+        height: 30px;
+        margin: 0 auto;
+        padding: 0.5em 0.5em 0.3em 0.3em;
+    }
+    .footer-logo img {
+        width: 100%;
+        height: 100%;
+    }
+    .footer-social .social-icon {
+        font-size: 1.5em;
+        margin: 0.5em 0.2em;
+    }
+    .footer-copyright p {
+        font-size: 0.95em;
+        padding: 0.5em;;
+    }
+
+    .photo-container {
+        height: 350px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .photo-container img {
+        height: 300px;
+        left: 100px;
+    }
+
+    .photo-container h1 {
+        font-size: 1.5em;
+        right: 100px;
+        bottom: 50px;
+        max-width: 300px;
+    }
+
+    .photo-container .title {
+        top: 120px;	
+        font-size: 2.5em;
+    }
+
+    .greeting {
+        padding: 0 1em;
+        font-size: 1.3em;
+    }
+
+    .values {
+        padding: 1em;
+        padding-bottom: 2em;
+    }
+    
+    .values h1 {
+        font-size: 2em !important;
+        text-align: center;
+        margin-bottom: 0.5 !important;
+    }
+
+    .values .baloons {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 3em !important;
+    }
+
+    .baloon {
+        max-width: 450px !important;
+        min-width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    .baloon img {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .baloon p {
+        font-size: 1.1em !important;
+        text-align: center;
+        margin: 0;
+        max-width: 350px !important;
+        width: 100%;
+    }
+
+    .partners {
+        padding: 1em !important;
+    }
+
+    .partners h1 {
+        font-size: 2em !important;
+        margin-bottom: 1em !important;
+    }
+    
+    .partners-logos a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .partners-logos img {
+        height: 150px !important;
+        object-fit: contain !important;
+        max-width: 90vw !important;
+    }
+
+    .interesting .row {
+        gap: 2em !important;
+        max-height: 320px !important;
+        overflow: hidden !important;
+        background-color: #f3f3f3;
+        margin: 0 !important;
+    }
+
+    .interesting .row .text {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .interesting img {
+        margin-right: -450px !important;
+        border-radius: 50% !important;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.08) !important;
+    }
+
+    .interesting .row:nth-of-type(2) img{
+        margin-right: 0 !important;
+        margin-left: -300px !important;
+    }
+
+    .interesting .text {
+        padding: 1.2em !important;
+        max-width: 320px !important;
+    }
+
+    .interesting .text h2 {
+        font-size: 1.1em !important;
+    }
+
+    .interesting .text p {
+        font-size: 0.95em !important;
+    }
+
+    .contacts h1 {
+        font-size: 2em;
+        margin: 0.5em 0;
+    }
+    .contact-card {
+        width: 85vw;
+        margin-bottom: 2em;
+    }
+    .contacts-upper {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2.5em 0.5em ;
+        gap: 1.5em;
+    }
+    .contact-card img {
+        width: 200px;
+        height: 200px;
+    }
+    .contact-content {
+        padding: 0.5em 0;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-content h2 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    .contact-content p {
+        font-size: 1em;
+        margin: 0.5em 0;
+        margin-left: 0;
+        gap: 0.5em;
+        justify-content: center;
+    }
+    .map {
+        height: 300px;
+    }
+    .contact-form {
+        width: 80vw;
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+    .contact-form h2 {
+        font-size: 1.5em;
+        margin: 0.5em 0;
+    }
+    .contact-form label {
+        font-size: 1em;
+        margin-left: 0;
+    }
+    .contact-form form {
+        width: 100%;
+        gap: 8px;
+    }
+    .contact-form form input,
+    .contact-form form textarea {
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    button {
+        width: 100%;
+        font-size: 1em;
+        padding: 0.7em 1em;
+    }
+
+    .product-categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 600px;
+    }
+}

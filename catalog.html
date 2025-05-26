@@ -13,14 +13,31 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     </head>
     <body>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const hamburger = document.querySelector('.hamburger');
+                const navUl = document.getElementById('main-nav');
+                if(hamburger && navUl) {
+                    hamburger.addEventListener('click', function() {
+                        navUl.classList.toggle('active');
+                        this.setAttribute('aria-expanded', navUl.classList.contains('active'));
+                    });
+                }
+            });
+        </script>
         <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="./static/Logos/long_logo.jpg" alt="Relive - Лого" />
-                </a>
+            <div class="header-row">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./static/Logos/long_logo.jpg" alt="Relive - Лого" />
+                    </a>
+                </div>
+                <button class="hamburger" aria-label="Меню" aria-expanded="false" aria-controls="main-nav">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
             <nav>
-                <ul>
+                <ul id="main-nav">
                     <li><a href="index.html">Начало</a></li>
                     <li><a href="about.html">За нас</a></li>
                     <li><a href="contacts.html">Контакти</a></li>
