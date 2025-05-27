@@ -1460,3 +1460,320 @@ button:hover {
         width: 600px;
     }
 }
+
+@media (max-width: 460px) {
+    header {
+        padding: 0.5em 1em !important;
+    }
+    .logo img {
+        max-width: 150px !important;
+        height: auto !important;
+    } 
+    nav ul {
+        top: 60px;
+        padding: 1em 0.2em;
+        gap: 1em;
+    }
+    nav ul li {
+        font-size: 1.1em;
+    }
+
+    .footer-content {
+        padding: 1em 0.2em 0.5em 0.2em;
+    }
+    .footer-logo {
+        width: 110px;
+        height: 22px;
+        padding: 0.3em 0.3em 0.2em 0.2em;
+    }
+    .footer-social .social-icon {
+        font-size: 1.1em;
+    }
+    .footer-menu a {
+        font-size: 0.95em;
+        margin: 0 0.3em;
+    }
+    .footer-copyright p {
+        font-size: 0.7em;
+    }
+
+    .hero {
+        min-height: 220px;
+        padding: 1em 0.2em;
+    }
+    .hero-container {
+        padding: 0.7em 0.5em;
+        max-width: 98vw;
+    }
+    .hero-container h1 {
+        font-size: 1.7em;
+        margin-bottom: 0.2em;
+    }
+    .hero-container h2 {
+        font-size: 1em;
+        margin-top: 0.2em;
+    }
+    .hero-container p {
+        font-size: 0.9em;
+        margin: 0.5em 0;
+    }
+    .hero-container hr {
+        width: 90vw;
+        height: 2px;
+        margin-top: 0.7em;
+    }
+    
+    .greeting {
+        font-size: 0.8em;
+        padding: 0.8em;
+    }
+
+    .categories {
+        padding: 0.5em;
+        padding-bottom: 1em;
+    }
+
+    .categories ul {
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .categories ul li {
+        max-width: 180px;
+        min-width: 80px;
+        margin: 0;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 180px;
+        min-width: 80px;
+        margin: 0 auto;
+    }
+
+    .card-image img {
+        object-fit: cover;
+    }
+
+    .card-title {
+        font-size: 0.8em;
+        padding: 0.3em 0.1em;
+    }
+    
+    .promo-content h2 {
+        font-size: 1em;
+        max-width: 100%;
+        margin: 0.3em 0;
+    }
+    .promo-content h3 {
+        font-size: 0.9em;
+        margin: 0.2em 0;
+    }
+    .promo-content p {
+        font-size: 0.85em;
+        margin: 0.2em 0;
+    }
+    .promo-content .percent {
+        width: 60px;
+        height: 60px;
+        font-size: 0.85em;
+        top: 5px;
+        right: 5px;
+        padding: 0.2em;
+    }
+    .card-footer p {
+        font-size: 0.8em;
+        max-width: 100px;
+    }
+
+    .card-footer a {
+        font-size: 0.75em;
+        padding: 0.5em 0.7em;
+    }
+
+    .events {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .events .title {
+        font-size: 1.6em;
+        margin: 0;
+    }
+
+    .photo-container {
+        height: 180px;
+    }
+    .photo-container img {
+        height: 120px;
+        left: 30px;
+    }
+    .photo-container h1 {
+        font-size: 0.9em;
+        right: 30px;
+        bottom: 20px;
+        max-width: 120px;
+    }
+    .photo-container .title {
+        top: 40px;
+        font-size: 1.1em;
+    }
+
+    .values {
+        padding: 0.5em;
+        padding-bottom: 1em;
+    }
+    .values h1 {
+        font-size: 1.1em !important;
+    }
+    .values .baloons {
+        gap: 1em !important;
+    }
+    .baloon {
+        max-width: 220px !important;
+        min-width: 120px;
+        gap: 0.7em;
+    }
+    .baloon img {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .baloon p {
+        font-size: 0.9em !important;
+        max-width: 120px !important;
+    }
+
+    .partners {
+        padding: 0.5em !important;
+    }
+    .partners h1 {
+        font-size: 1.1em !important;
+        margin-bottom: 0.5em !important;
+    }
+    .partners-logos img {
+        height: 60px !important;
+        max-width: 80vw !important;
+    }
+
+    .interesting .row {
+        gap: 0.7em !important;
+        max-height: 120px !important;
+        padding: 0 !important;
+    }
+    .interesting img {
+        width: 60px !important;
+        height: 60px !important;
+        margin-right: -80px !important;
+    }
+    .interesting .row:nth-of-type(2) img {
+        margin-left: -60px !important;
+        margin-right: 0 !important;
+    }
+    .interesting .text {
+        padding: 0.5em !important;
+        max-width: 120px !important;
+    }
+    .interesting .text h2 {
+        font-size: 0.7em !important;
+    }
+    .interesting .text p {
+        font-size: 0.7em !important;
+    }
+
+    .contacts h1 {
+        font-size: 1.1em;
+        margin: 0.3em 0;
+    }
+    .contact-card {
+        width: 98vw;
+        margin-bottom: 1em;
+    }
+    .contacts-upper {
+        padding: 1em 0.2em;
+        gap: 0.7em;
+    }
+    .contact-card img {
+        width: 70px;
+        height: 70px;
+    }
+    .contact-content h2 {
+        font-size: 1em;
+        margin-bottom: 0.2em;
+    }
+    .contact-content p {
+        font-size: 0.7em;
+        margin: 0.2em 0;
+    }
+    .map {
+        height: 80px;
+    }
+    .contact-form {
+        width: 98vw;
+        padding: 0.5em;
+        margin-bottom: 1em;
+    }
+    .contact-form h2 {
+        font-size: 1em;
+        margin: 0.2em 0;
+    }
+    .contact-form label {
+        font-size: 0.8em;
+    }
+    .contact-form form input,
+    .contact-form form textarea {
+        font-size: 0.8em;
+        padding: 0.3em;
+    }
+    button {
+        font-size: 0.9em;
+        padding: 0.4em 0.7em;
+    }
+
+    .product-categories {
+        width: 98vw;
+        gap: 0.5em;
+    }
+    .product-categories a {
+        font-size: 0.9em;
+        padding: 0.5em 0.2em;
+        min-width: 80px;
+        max-width: 120px;
+    }
+    .catalog-items {
+        gap: 0.7em;
+        margin-bottom: 1em;
+    }
+    .item {
+        width: 120px;
+        height: 180px;
+    }
+    .item img {
+        width: 120px;
+        max-height: 100px;
+    }
+    .product-content {
+        height: 60px;
+        padding: 0.2em;
+    }
+    .item h2 {
+        font-size: 0.8em;
+    }
+    .item p {
+        font-size: 0.7em;
+    }
+    .size-table {
+        margin: 1em auto;
+        max-width: 98vw;
+    }
+    .size-table h2 {
+        font-size: 1em;
+        margin: 0.5em;
+    }
+    .size-table th, .size-table td {
+        padding: 0.3em 0.5em;
+        font-size: 0.7em;
+    }
+}
