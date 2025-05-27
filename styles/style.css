@@ -1060,7 +1060,7 @@ button:hover {
         width: 100%;
     }
     header {
-        flex-direction: row !important;
+        flex-direction: column;
         justify-content: space-between !important;
         padding: 1em 2em !important;
     }
@@ -1077,10 +1077,7 @@ button:hover {
     nav ul {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 100px;
-        right: 0;
-        left: 0;
+        position: static;
         width: 100%;
         background: #fff;
         z-index: 1000;
@@ -1219,8 +1216,6 @@ button:hover {
         padding: 0.7em 1.2em;
     }
 
-
-
     .footer-content {
         flex-direction: column;
         align-items: center;
@@ -1230,6 +1225,7 @@ button:hover {
         padding-top: 1em;
         text-align: center;
     }
+
     .footer-content .left,
     .footer-content .center,
     .footer-content .right {
@@ -1240,23 +1236,28 @@ button:hover {
         justify-content: center;
         width: 100%;
     }
+
     .footer-content .center p:nth-of-type(3) {
         margin-bottom: 0.3em;
     }
+    
     .footer-logo {
         width: 160px;
         height: 30px;
         margin: 0 auto;
         padding: 0.5em 0.5em 0.3em 0.3em;
     }
+
     .footer-logo img {
         width: 100%;
         height: 100%;
     }
+
     .footer-social .social-icon {
         font-size: 1.5em;
         margin: 0.5em 0.2em;
     }
+
     .footer-copyright p {
         font-size: 0.95em;
         padding: 0.5em;;
@@ -1392,29 +1393,35 @@ button:hover {
         font-size: 2em;
         margin: 0.5em 0;
     }
+
     .contact-card {
         width: 85vw;
         margin-bottom: 2em;
     }
+
     .contacts-upper {
         flex-direction: column;
         justify-content: center;
         padding: 2.5em 0.5em ;
         gap: 1.5em;
     }
+
     .contact-card img {
         width: 200px;
         height: 200px;
     }
+
     .contact-content {
         padding: 0.5em 0;
         align-items: center;
         text-align: center;
     }
+
     .contact-content h2 {
         font-size: 1.5em;
         margin-bottom: 0.5em;
     }
+
     .contact-content p {
         font-size: 1em;
         margin: 0.5em 0;
@@ -1422,18 +1429,22 @@ button:hover {
         gap: 0.5em;
         justify-content: center;
     }
+
     .map {
         height: 300px;
     }
+    
     .contact-form {
         width: 80vw;
         padding: 1em;
         margin-bottom: 2em;
     }
+
     .contact-form h2 {
         font-size: 1.5em;
         margin: 0.5em 0;
     }
+    
     .contact-form label {
         font-size: 1em;
         margin-left: 0;
@@ -1442,11 +1453,13 @@ button:hover {
         width: 100%;
         gap: 8px;
     }
+
     .contact-form form input,
     .contact-form form textarea {
         font-size: 1em;
         padding: 0.5em;
     }
+    
     button {
         width: 100%;
         font-size: 1em;
@@ -1465,15 +1478,18 @@ button:hover {
     header {
         padding: 0.5em 1em !important;
     }
+
     .logo img {
         max-width: 150px !important;
         height: auto !important;
     } 
+
     nav ul {
         top: 60px;
         padding: 1em 0.2em;
         gap: 1em;
     }
+
     nav ul li {
         font-size: 1.1em;
     }
@@ -1481,18 +1497,22 @@ button:hover {
     .footer-content {
         padding: 1em 0.2em 0.5em 0.2em;
     }
+
     .footer-logo {
         width: 110px;
         height: 22px;
         padding: 0.3em 0.3em 0.2em 0.2em;
     }
+
     .footer-social .social-icon {
         font-size: 1.1em;
     }
+
     .footer-menu a {
         font-size: 0.95em;
         margin: 0 0.3em;
     }
+
     .footer-copyright p {
         font-size: 0.7em;
     }
@@ -1501,22 +1521,27 @@ button:hover {
         min-height: 220px;
         padding: 1em 0.2em;
     }
+
     .hero-container {
         padding: 0.7em 0.5em;
         max-width: 98vw;
     }
+
     .hero-container h1 {
         font-size: 1.7em;
         margin-bottom: 0.2em;
     }
+
     .hero-container h2 {
         font-size: 1em;
         margin-top: 0.2em;
     }
+    
     .hero-container p {
         font-size: 0.9em;
         margin: 0.5em 0;
     }
+
     .hero-container hr {
         width: 90vw;
         height: 2px;
@@ -1569,14 +1594,17 @@ button:hover {
         max-width: 100%;
         margin: 0.3em 0;
     }
+
     .promo-content h3 {
         font-size: 0.9em;
         margin: 0.2em 0;
     }
+
     .promo-content p {
         font-size: 0.85em;
         margin: 0.2em 0;
     }
+
     .promo-content .percent {
         width: 60px;
         height: 60px;
@@ -1585,6 +1613,7 @@ button:hover {
         right: 5px;
         padding: 0.2em;
     }
+
     .card-footer p {
         font-size: 0.8em;
         max-width: 90px;
@@ -1608,16 +1637,19 @@ button:hover {
     .photo-container {
         height: 180px;
     }
+
     .photo-container img {
         height: 120px;
         left: 30px;
     }
+
     .photo-container h1 {
         font-size: 0.9em;
         right: 30px;
         bottom: 20px;
         max-width: 120px;
     }
+
     .photo-container .title {
         top: 40px;
         font-size: 1.1em;
@@ -1627,21 +1659,26 @@ button:hover {
         padding: 0.5em;
         padding-bottom: 1em;
     }
+
     .values h1 {
         font-size: 1.1em !important;
     }
+
     .values .baloons {
         gap: 1em !important;
     }
+
     .baloon {
         max-width: 220px !important;
         min-width: 120px;
         gap: 0.7em;
     }
+
     .baloon img {
         width: 60px !important;
         height: 60px !important;
     }
+
     .baloon p {
         font-size: 0.9em !important;
         max-width: 120px !important;
@@ -1650,10 +1687,12 @@ button:hover {
     .partners {
         padding: 0.5em !important;
     }
+
     .partners h1 {
         font-size: 1.1em !important;
         margin-bottom: 0.5em !important;
     }
+
     .partners-logos img {
         height: 60px !important;
         max-width: 80vw !important;
@@ -1664,22 +1703,27 @@ button:hover {
         max-height: 120px !important;
         padding: 0 !important;
     }
+
     .interesting img {
         width: 60px !important;
         height: 60px !important;
         margin-right: -80px !important;
     }
+
     .interesting .row:nth-of-type(2) img {
         margin-left: -60px !important;
         margin-right: 0 !important;
     }
+
     .interesting .text {
         padding: 0.5em !important;
         max-width: 120px !important;
     }
+
     .interesting .text h2 {
         font-size: 0.7em !important;
     }
+
     .interesting .text p {
         font-size: 0.7em !important;
     }
@@ -1688,46 +1732,57 @@ button:hover {
         font-size: 1.1em;
         margin: 0.3em 0;
     }
+
     .contact-card {
         width: 98vw;
         margin-bottom: 1em;
     }
+
     .contacts-upper {
         padding: 1em 0.2em;
         gap: 0.7em;
     }
+
     .contact-card img {
         width: 70px;
         height: 70px;
     }
+
     .contact-content h2 {
         font-size: 1em;
         margin-bottom: 0.2em;
     }
+
     .contact-content p {
         font-size: 0.7em;
         margin: 0.2em 0;
     }
+
     .map {
         height: 80px;
     }
+
     .contact-form {
         width: 98vw;
         padding: 0.5em;
         margin-bottom: 1em;
     }
+
     .contact-form h2 {
         font-size: 1em;
         margin: 0.2em 0;
     }
+
     .contact-form label {
         font-size: 0.8em;
     }
+
     .contact-form form input,
     .contact-form form textarea {
         font-size: 0.8em;
         padding: 0.3em;
     }
+
     button {
         font-size: 0.9em;
         padding: 0.4em 0.7em;
@@ -1737,42 +1792,52 @@ button:hover {
         width: 98vw;
         gap: 0.5em;
     }
+    
     .product-categories a {
         font-size: 0.9em;
         padding: 0.5em 0.2em;
         min-width: 80px;
         max-width: 120px;
     }
+    
     .catalog-items {
         gap: 0.7em;
         margin-bottom: 1em;
     }
+
     .item {
         width: 120px;
         height: 180px;
     }
+
     .item img {
         width: 120px;
         max-height: 100px;
     }
+
     .product-content {
         height: 60px;
         padding: 0.2em;
     }
+
     .item h2 {
         font-size: 0.8em;
     }
+
     .item p {
         font-size: 0.7em;
     }
+
     .size-table {
         margin: 1em auto;
         max-width: 98vw;
     }
+
     .size-table h2 {
         font-size: 1em;
         margin: 0.5em;
     }
+    
     .size-table th, .size-table td {
         padding: 0.3em 0.5em;
         font-size: 0.7em;
