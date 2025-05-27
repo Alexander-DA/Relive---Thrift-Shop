@@ -1409,6 +1409,7 @@ button:hover {
     .contact-card img {
         width: 200px;
         height: 200px;
+        border: 0.3em solid #fff;
     }
 
     .contact-content {
@@ -1639,7 +1640,7 @@ button:hover {
     }
 
     .photo-container img {
-        height: 120px;
+        height: 150px;
         left: 30px;
     }
 
@@ -1647,11 +1648,11 @@ button:hover {
         font-size: 0.9em;
         right: 30px;
         bottom: 20px;
-        max-width: 120px;
+        max-width: 180px;
     }
 
     .photo-container .title {
-        top: 40px;
+        top: 60px;
         font-size: 1.1em;
     }
 
@@ -1661,7 +1662,8 @@ button:hover {
     }
 
     .values h1 {
-        font-size: 1.1em !important;
+        font-size: 1.3em !important;
+        margin-bottom: 0.5em;
     }
 
     .values .baloons {
@@ -1680,8 +1682,8 @@ button:hover {
     }
 
     .baloon p {
-        font-size: 0.9em !important;
-        max-width: 120px !important;
+        font-size: 0.8em !important;
+        max-width: 180px !important;
     }
 
     .partners {
@@ -1700,92 +1702,102 @@ button:hover {
 
     .interesting .row {
         gap: 0.7em !important;
-        max-height: 120px !important;
         padding: 0 !important;
+        justify-content: center !important;
     }
 
     .interesting img {
-        width: 60px !important;
-        height: 60px !important;
-        margin-right: -80px !important;
-    }
-
-    .interesting .row:nth-of-type(2) img {
-        margin-left: -60px !important;
-        margin-right: 0 !important;
+        display: none;
     }
 
     .interesting .text {
         padding: 0.5em !important;
-        max-width: 120px !important;
+        max-width: 300px !important;
     }
 
     .interesting .text h2 {
-        font-size: 0.7em !important;
+        font-size: 1em !important;
     }
 
     .interesting .text p {
-        font-size: 0.7em !important;
-    }
-
-    .contacts h1 {
-        font-size: 1.1em;
-        margin: 0.3em 0;
+        font-size: 0.8em !important;
     }
 
     .contact-card {
-        width: 98vw;
-        margin-bottom: 1em;
+        width: 90vw;
+        margin-bottom: 2em;
     }
 
     .contacts-upper {
-        padding: 1em 0.2em;
-        gap: 0.7em;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2.5em 0.5em ;
+        gap: 1.5em;
     }
 
     .contact-card img {
-        width: 70px;
-        height: 70px;
+        width: 200px;
+        height: 200px;
+        border: 0.2em solid #fff;
+    }
+
+    .contact-content {
+        padding: 0.5em 0;
+        align-items: center;
+        text-align: center;
     }
 
     .contact-content h2 {
-        font-size: 1em;
-        margin-bottom: 0.2em;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
     }
 
     .contact-content p {
-        font-size: 0.7em;
-        margin: 0.2em 0;
+        font-size: 0.8em;
+        margin: 0.5em 0;
+        margin-left: 0;
+        gap: 0.5em;
+        justify-content: center;
+    }
+
+    .contact-content i {
+        display: none;
     }
 
     .map {
-        height: 80px;
+        height: 300px;
     }
-
+    
     .contact-form {
-        width: 98vw;
-        padding: 0.5em;
-        margin-bottom: 1em;
+        width: 80vw;
+        padding: 1em;
+        margin-bottom: 2em;
     }
 
     .contact-form h2 {
-        font-size: 1em;
-        margin: 0.2em 0;
+        font-size: 1.5em;
+        margin: 0.5em 0;
     }
-
+    
     .contact-form label {
-        font-size: 0.8em;
+        font-size: 1em;
+        margin-left: 0;
+    }
+    .contact-form form {
+        width: 100%;
+        gap: 8px;
     }
 
     .contact-form form input,
     .contact-form form textarea {
-        font-size: 0.8em;
-        padding: 0.3em;
+        font-size: 1em;
+        padding: 0.5em;
     }
-
+    
     button {
-        font-size: 0.9em;
-        padding: 0.4em 0.7em;
+        width: 100%;
+        font-size: 1em;
+        padding: 0.7em 1em;
     }
 
     .product-categories {
@@ -1837,7 +1849,7 @@ button:hover {
         font-size: 1em;
         margin: 0.5em;
     }
-    
+
     .size-table th, .size-table td {
         padding: 0.3em 0.5em;
         font-size: 0.7em;
