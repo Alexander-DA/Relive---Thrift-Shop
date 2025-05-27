@@ -13,18 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     </head>
     <body>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const hamburger = document.querySelector('.hamburger');
-                const navUl = document.getElementById('main-nav');
-                if(hamburger && navUl) {
-                    hamburger.addEventListener('click', function() {
-                        navUl.classList.toggle('active');
-                        this.setAttribute('aria-expanded', navUl.classList.contains('active'));
-                    });
-                }
-            });
-        </script>
+        <script src="../app.js"></script>
         <header>
             <div class="header-row">
                 <div class="logo">
