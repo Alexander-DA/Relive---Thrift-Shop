@@ -1542,14 +1542,14 @@ button:hover {
     }
 
     .categories ul li {
-        max-width: 180px;
+        max-width: 150px;
         min-width: 80px;
         margin: 0;
     }
     
     .card {
         width: 100%;
-        max-width: 180px;
+        max-width: 150px;
         min-width: 80px;
         margin: 0 auto;
     }
@@ -1586,11 +1586,11 @@ button:hover {
     }
     .card-footer p {
         font-size: 0.8em;
-        max-width: 100px;
+        max-width: 90px;
     }
 
     .card-footer a {
-        font-size: 0.75em;
+        font-size: 0.7em;
         padding: 0.5em 0.7em;
     }
 
